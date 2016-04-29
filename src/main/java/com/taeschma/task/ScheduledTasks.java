@@ -18,7 +18,7 @@ public class ScheduledTasks {
 		this.dropboxService = dropboxService;
 	}
 
-	@Scheduled(fixedRate = 120000)
+	@Scheduled(fixedRate = 600000)
 	public void syncImages() {
 		log.info("Start sync...");
 		dropboxService.syncFiles();

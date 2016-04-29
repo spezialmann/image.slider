@@ -116,7 +116,7 @@ public class DropboxService {
 				LocalDateTime ldt = LocalDateTime.ofInstant(lastModified.toInstant(), ZoneId.systemDefault());
 				newFile.setLastModified(ldt);
 				
-				BinaryFile save = binaryFileRepository.save(newFile);
+				binaryFileRepository.save(newFile);
 
 			}
 		} catch (IOException | DbxException e) {
